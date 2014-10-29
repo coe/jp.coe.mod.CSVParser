@@ -1,0 +1,9 @@
+{
+    "description": "jp.coe.mod.CSVParser",
+    "directories": {
+        "lib": "."
+    },
+    "main": "jp.coe.mod.CSVParser",
+    "name": "jp.coe.mod.CSVParser",
+    "version":"0.0.2"
+}
