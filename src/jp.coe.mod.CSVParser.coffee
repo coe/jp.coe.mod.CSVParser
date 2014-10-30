@@ -35,6 +35,7 @@ module.exports = class CSVParser
 
   constructor: () ->
     # body...}
+    # 
     
   @getJSON :(res) ->
     d = res.split(/\r\n|\r|\n/) # 1行ごとに分割する
@@ -42,7 +43,7 @@ module.exports = class CSVParser
     jsonArray
   
   @getFileToJSON :(res_filename) ->
-    require("CSVParser").getJSON require("CSVParser").getCSVResString res_filename
+    require("jp.coe.mod.CSVParser").getJSON require("jp.coe.mod.CSVParser").getCSVResString res_filename
     
     
 

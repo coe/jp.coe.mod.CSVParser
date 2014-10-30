@@ -33,7 +33,7 @@ module.exports = CSVParser = (function() {
   };
 
   CSVParser.getFileToJSON = function(res_filename) {
-    return require("CSVParser").getJSON(require("CSVParser").getCSVResString(res_filename));
+    return require("jp.coe.mod.CSVParser").getJSON(require("jp.coe.mod.CSVParser").getCSVResString(res_filename));
   };
 
 
