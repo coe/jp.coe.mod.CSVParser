@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.0.2
+version: 0.1.0
 description: twitter
 author: no
 license: Appcelerator Commercial License
@@ -10,8 +10,8 @@ copyright: Copyright (c) 2011-2014 by th.
 
 
 # these should not be edited
-name: jp.coe.mod.CSVParser
-moduleid: jp.coe.mod.CSVParser
+name: jp.coe.mod.csvparser
+moduleid: jp.coe.mod.csvparser
 guid: 1056b5d2-2bb5-4339-b930-297637aeec4e
 platform: commonjs
 minsdk: 2.1.0

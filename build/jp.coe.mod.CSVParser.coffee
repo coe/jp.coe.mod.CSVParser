@@ -1,5 +1,6 @@
 module.exports = class CSVParser 
 
+  NAME = "jp.coe.mod.csvparser"
 
   csv2json = (csvArray) ->
     jsonArray = []
@@ -43,7 +44,7 @@ module.exports = class CSVParser
     jsonArray
   
   @getFileToJSON :(res_filename) ->
-    require("jp.coe.mod.CSVParser").getJSON require("jp.coe.mod.CSVParser").getCSVResString res_filename
+    require(NAME).getJSON require(NAME).getCSVResString res_filename
     
     
 
