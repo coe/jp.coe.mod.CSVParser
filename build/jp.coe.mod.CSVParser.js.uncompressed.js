@@ -2,7 +2,9 @@
 var CSVParser;
 
 module.exports = CSVParser = (function() {
-  var csv2json;
+  var NAME, csv2json;
+
+  NAME = "jp.coe.mod.csvparser";
 
   csv2json = function(csvArray) {
     var a_line, csvArrayD, i, items, j, jsonArray;
@@ -33,7 +35,7 @@ module.exports = CSVParser = (function() {
   };
 
   CSVParser.getFileToJSON = function(res_filename) {
-    return require("jp.coe.mod.CSVParser").getJSON(require("jp.coe.mod.CSVParser").getCSVResString(res_filename));
+    return require(NAME).getJSON(require(NAME).getCSVResString(res_filename));
   };
 
 
