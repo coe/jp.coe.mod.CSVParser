@@ -38,11 +38,21 @@ module.exports = class CSVParser
     # body...}
     # 
     
+  ###*
+  文字列からjson取得
+  @param {String} 文字列
+  @return {Array} json array
+  ###
   @getJSON :(res) ->
     d = res.split(/\r\n|\r|\n/) # 1行ごとに分割する
     jsonArray = csv2json(d) # JSON形式に変換
     jsonArray
   
+  ###*
+  リソースファイルからjson取得
+  @param {String} ファイル名
+  @return {Array} json array
+  ###
   @getFileToJSON :(res_filename) ->
     require(NAME).getJSON require(NAME).getCSVResString res_filename
     
@@ -50,6 +60,8 @@ module.exports = class CSVParser
 
   ###*
   リソースファイルから文字列取得
+  @param {String} ファイル名
+  @return {String} file string
   ###
   @getCSVResString:(res_filename)->
     #csvファイルから文字列取得
